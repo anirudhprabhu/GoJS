@@ -82,7 +82,7 @@
       { key: 10, text: "Percent Body Fat" },
       //{ key: 11, text: "Psychosocial Stress Score" },
       { key: 12, text: "Total Body Fat" },
-      { key: 13, text: "Waist to Hip Ratio" },
+      //{ key: 13, text: "Waist to Hip Ratio" },
       //{ key: 14, text: "Weight Class" },
       //{ key: 15, text: "Anthropometry Measure" },
       { key: 16, text: "BioImpedance" },
@@ -91,7 +91,7 @@
       { key: 19, text: "Total Caloric Intake" },
       { key: 20, text: "Height" },
       { key: 21, text: "Weight" },
-      { key: 22, text: "Hip Circumference" },
+      //{ key: 22, text: "Hip Circumference" },
       { key: 23, text: "Waist Circumference" },
       //{ key: 24, text: "Head Circumference" },
       { key: 25, text: "Age" },
@@ -111,8 +111,10 @@
     var oldskips = myDiagram.skipsUndoManager;
     myDiagram.skipsUndoManager = true;
     myDiagram.model.addNodeDataCollection([
-      { category: "token", at: 27, color: "red" }
-
+      { category: "token", at: 27, color: "red" },
+      { category: "token", at: 27, color: "green" },
+      { category: "token", at: 27, color: "blue" },
+      { category: "token", at: 27, color: "orange" }
     ]);
     myDiagram.skipsUndoManager = oldskips;
     window.requestAnimationFrame(updateTokens);
